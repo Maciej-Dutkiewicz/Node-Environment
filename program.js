@@ -13,6 +13,7 @@ process.stdin.on('readable', function(){
                 break;
             case '/lang':
                 console.log(process.env.LC_CTYPE);
+                break;
             default:
                 process.stderr.write('Wrong instruction!\n');
         }
